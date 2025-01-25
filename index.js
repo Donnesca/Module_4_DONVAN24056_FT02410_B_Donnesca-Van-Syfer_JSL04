@@ -4,7 +4,7 @@
 // Given a variable that holds a user's preferred type of Monster Energy drink,
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
-let userPreference = "Regular"; // Possible values: 'Regular', 'Sugar-free', or undefined
+let userPreference = ""; // Possible values: 'Regular', 'Sugar-free', or undefined
 //I added that
 let preferredVariety =
   userPreference === "Sugar-free" ? "Sugar-free" : "Regular";
@@ -37,8 +37,12 @@ console.log(currentTemp <= 5 ? "Needs a cooler!" : "Chilled to perfection!");
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22;
-
+let currentHour = 5;
+console.log(
+  currentHour >= 7 && currentHour <= 23
+    ? "Unleash the beast!"
+    : "Better stick to water."
+);
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
